@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #f0f0f0;
+  }
+  
+  .speaker-container {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+  }
+  
+  .speaker {
+    width: 40px;
+    height: 80px;
+    background-color: #333;
+    border-radius: 10px;
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .speaker::before,
+  .speaker::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    bottom: 0;
+  }
+  
+  .speaker::before {
+    left: 10px;
+    border-radius: 50%;
+  }
+  
+  .speaker::after {
+    right: 10px;
+    border-radius: 50%;
+  }
+  
